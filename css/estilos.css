@@ -13,13 +13,13 @@ html {
 body {
   background-color: #FFE0BA;
   color: #333;
-  font-family: "Isometra", Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: Arial, sans-serif;
+  font-family: 'Isometra';
 }
 
 h2 {
