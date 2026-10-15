@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFE0BA;
+  color: #333;
+  font-family: "Isometra", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Isometra", Arial, sans-serif;
+}
+
+h2 {
+  margin: 0.83em 0;
+  color: #9C6C4B;
+  border-bottom: 2px solid #9C6C4B;
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin: 1em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+main {
+  padding: 20px 40px;
+  min-height: 60vh;
+}
+main p {
+  line-height: 1.6;
+}
+
+.caja-contenido {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.caja-contenido h3 {
+  margin-top: 30px;
+  color: #555;
+}
+
+#bienvenida h2 + p {
+  font-size: 1.1em;
+}
+
+#proyectos-destacados {
+  margin-top: 30px;
+}
+#proyectos-destacados h3 {
+  color: #333;
+}
+
+.proyecto-placeholder {
+  background-color: #eee;
+  border: 1px dashed #ccc;
+  padding: 40px;
+  text-align: center;
+  color: #777;
+}
+
+.lista-habilidades {
+  margin: 1em 0;
+  list-style: square;
+  padding-left: 20px;
+}
+.lista-habilidades > li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.formulario-contacto .campo {
+  margin-bottom: 20px;
+}
+.formulario-contacto label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+}
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  border-color: #9C6C4B;
+  outline: 2px solid #905633;
+}
+.formulario-contacto textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+footer {
+  padding: 20px 40px;
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+}
+footer p {
+  margin: 0;
+}
+footer p + p {
+  margin: 5px 0 0 0;
+  font-size: 0.9em;
+}
+
+header {
+  padding: 20px 40px;
+  background-color: #9C6C4B;
+  color: white;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5em;
+}
+header p {
+  margin: 5px 0 0 0;
+  font-style: italic;
+}
+
+nav {
+  padding: 10px 40px;
+  background-color: #333;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav li:last-child {
+  margin-right: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+nav a.activo {
+  color: #905633;
+}
+
+.boton-primario {
+  background-color: #9C6C4B;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.boton-primario:hover, .boton-primario:focus {
+  background-color: #4B300F;
+}
+.boton-primario:focus {
+  outline: 2px solid #905633;
+  outline-offset: 2px;
+}

@@ -1,0 +1,143 @@
+@use 'colores';
+@use 'mixin';
+
+/* El "Reseteo Mágico" */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: colores.$color-fondo;
+  color: colores.$color-texto;
+  font-family: colores.$fuente-base;
+}
+
+h1,
+h2,
+h3 {
+  font-family: colores.$fuente-base;
+}
+
+h2 {
+  margin: 0.83em 0;
+  color: colores.$color-primario;
+  border-bottom: 2px solid colores.$color-primario;
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin: 1em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
+// ===== Contenido principal =====
+main {
+  @include mixin.franja(20px);
+  min-height: 60vh;
+
+  p {
+    line-height: 1.6;
+  }
+}
+
+.caja-contenido {
+  @include mixin.caja-blanca;
+
+  h3 {
+    margin-top: 30px;
+    color: colores.$color-subtitulo;
+  }
+}
+
+// Entradilla de la bienvenida
+#bienvenida h2 + p {
+  font-size: 1.1em;
+}
+
+#proyectos-destacados {
+  margin-top: 30px;
+
+  h3 {
+    color: colores.$color-texto;
+  }
+}
+
+.proyecto-placeholder {
+  background-color: colores.$color-placeholder-fondo;
+  border: 1px dashed colores.$color-placeholder-borde;
+  padding: 40px;
+  text-align: center;
+  color: colores.$color-placeholder-texto;
+}
+
+.lista-habilidades {
+  margin: 1em 0;
+  list-style: square;
+  padding-left: 20px;
+
+  > li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+}
+
+// Formulario de contacto
+.formulario-contacto {
+  .campo {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid colores.$color-borde-campo;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1em;
+
+    &:focus {
+      border-color: colores.$color-primario;
+      outline: 2px solid colores.$color-nav-activo;
+    }
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+}
+
+// Pie de página
+footer {
+  @include mixin.franja(20px);
+  background-color: colores.$color-footer-fondo;
+  color: colores.$color-footer-texto;
+  text-align: center;
+  margin-top: 20px;
+
+  p {
+    margin: 0;
+  }
+
+  // Segunda línea copyright pequeño
+  p + p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,25 @@
+// ===== Colores, fuente y medidas: único sitio donde se definen =====
+
+// Colores
+$color-primario: #9C6C4B;
+$color-primario-oscuro: #4B300F;
+$color-fondo: #FFE0BA;
+$color-texto: #333;
+$color-blanco: white;
+$color-nav-fondo: #333;
+$color-nav-activo: #905633;
+$color-subtitulo: #555;
+$color-footer-fondo: #222;
+$color-footer-texto: #aaa;
+$color-placeholder-fondo: #eee;
+$color-placeholder-borde: #ccc;
+$color-placeholder-texto: #777;
+$color-borde-campo: #ccc;
+
+// Tipografía
+$fuente-base: 'Isometra', Arial, sans-serif;
+
+// Medidas
+$espacio-lateral: 40px;
+$radio-borde: 8px;
+$sombra-caja: 0 2px 5px rgba(0, 0, 0, 0.1);

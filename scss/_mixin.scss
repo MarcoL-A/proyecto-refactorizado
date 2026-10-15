@@ -1,0 +1,14 @@
+@use 'colores';
+
+// Franja a todo lo ancho con relleno vertical variable y lateral fijo
+@mixin franja($relleno-vertical) {
+  padding: $relleno-vertical colores.$espacio-lateral;
+}
+
+// Caja blanca con esquinas redondeadas y sombra
+@mixin caja-blanca {
+  background-color: colores.$color-blanco;
+  padding: 20px;
+  border-radius: colores.$radio-borde;
+  box-shadow: colores.$sombra-caja;
+}

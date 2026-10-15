@@ -1,0 +1,23 @@
+@use 'colores';
+
+.boton-primario {
+  background-color: colores.$color-primario;
+  color: colores.$color-blanco;
+  border: none;
+  border-radius: colores.$radio-borde;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: colores.$color-primario-oscuro;
+  }
+
+  &:focus {
+    outline: 2px solid colores.$color-nav-activo;
+    outline-offset: 2px;
+  }
+}
