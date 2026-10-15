@@ -6,3 +6,8 @@
 @use 'contenido';
 @use 'header';
 @use 'botones';
+
+// Aplicar la fuente Isometra a los encabezados
+h1, h2, h3 {
+  font-family: 'Isometra', sans-serif;
+}
